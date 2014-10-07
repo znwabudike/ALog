@@ -34,23 +34,16 @@ Params:
     Thread thread == the thread you would like to trace.
 
 Example usage:
-
-    public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
-		    results = new ArrayList<HashMap<String, String>>();
-		    final Thread thread = new HandlerThread(threadname){
-			    public void run(){
-				    Log.d("Starting Thread");
-				    for (Driver driver : drivers){
-					    results.add(getRoutes(driver));
-				    }
-				     setResults(results);
-			    }
-
-
-		     };
-		    thread.setContextClassLoader(getClass().getClassLoader());
-		    return thread;
-	    }
+    public class DistanceHelper{
+       public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
+	   results = new ArrayList<HashMap<String, String>>();
+	   final Thread thread = new HandlerThread(threadname){
+	       public void run(){
+	           Log.d("Starting Thread");
+	           //Do stuff...
+	       }
+       }
+    }
 
 Example LogCat Output:
 
