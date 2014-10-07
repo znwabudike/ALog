@@ -34,6 +34,7 @@ Params:
     Thread thread == the thread you would like to trace.
 
 Example usage:
+
     public class DistanceHelper{
        public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
 	   results = new ArrayList<HashMap<String, String>>();
