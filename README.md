@@ -35,22 +35,22 @@ Params:
 
 Example usage:
 
-public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
-		results = new ArrayList<HashMap<String, String>>();
-		final Thread thread = new HandlerThread(threadname){
-			public void run(){
-				Log.d("Starting Thread");
-				for (Driver driver : drivers){
-					results.add(getRoutes(driver));
-				}
-				setResults(results);
-			}
+    public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
+		    results = new ArrayList<HashMap<String, String>>();
+		    final Thread thread = new HandlerThread(threadname){
+			    public void run(){
+				    Log.d("Starting Thread");
+				    for (Driver driver : drivers){
+					    results.add(getRoutes(driver));
+				    }
+				     setResults(results);
+			    }
 
 
-		};
-		thread.setContextClassLoader(getClass().getClassLoader());
-		return thread;
-	}
+		     };
+		    thread.setContextClassLoader(getClass().getClassLoader());
+		    return thread;
+	    }
 
 Example LogCat Output:
 
