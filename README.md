@@ -19,13 +19,14 @@ Three types of logging are provided:
     Log.v == vebose
     Log.i == info
 
-Three types of method overrides for each logging type:
+Four types of method overrides for each logging type:
 
 Methods:
 
+    public static void d(String msg)
     public static void d(String TAG, String msg)
-    public static void d(String TAG, String msg, Thread thread) 
     public static void d(String msg, Thread thread) 
+    public static void d(String TAG, String msg, Thread thread) 
 
 Params:
 
