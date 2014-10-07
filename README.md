@@ -52,9 +52,9 @@ Example usage:
 
 Example LogCat Output:
 
-10-06 18:45:32.933: D/DistanceHelper$1(6797): DistanceHelper$1.run()  Line = 63
-10-06 18:45:32.933: D/DistanceHelper$1(6797): -----------------------------------
-10-06 18:45:32.933: D/DistanceHelper$1(6797): Starting Thread
-10-06 18:45:32.933: D/DistanceHelper$1(6797): -----------------------------------
+    10-06 18:45:32.933: D/DistanceHelper$1(6797): DistanceHelper$1.run()  Line = 63
+    10-06 18:45:32.933: D/DistanceHelper$1(6797): -----------------------------------
+    10-06 18:45:32.933: D/DistanceHelper$1(6797): Starting Thread
+    10-06 18:45:32.933: D/DistanceHelper$1(6797): -----------------------------------
 
 
