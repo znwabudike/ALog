@@ -36,6 +36,8 @@ Params:
 Example usage:
 
     public class DistanceHelper{
+       ...
+       
        public Thread findRoutes(final ArrayList<Driver> drivers, String threadname){
 	   results = new ArrayList<HashMap<String, String>>();
 	   final Thread thread = new HandlerThread(threadname){
@@ -44,6 +46,7 @@ Example usage:
 	           //Do stuff...
 	       }
        }
+       ...
     }
 
 Example LogCat Output:
